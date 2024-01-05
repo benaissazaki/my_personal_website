@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Barlow;
+    src: url(../fonts/Barlow-Regular.woff2);
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url(../fonts/Barlow-Bold.woff2);
+    font-weight: bold;
+}
+
 :root {
     --body-background-color: #DBD2E0;
     --main-background-color: #AFC186;
@@ -8,6 +19,8 @@
 body {
     background-color: var(--body-background-color);
     color: var(--text-color);
+    font-family: Barlow;
+    font-size: 1.5rem;
 }
 
 main {
@@ -19,6 +32,11 @@ main {
     border: solid 10px var(--primary-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--primary-color);
 }
