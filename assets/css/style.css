@@ -1,0 +1,24 @@
+:root {
+    --body-background-color: #DBD2E0;
+    --main-background-color: #AFC186;
+    --primary-color: #000724;
+    --text-color: rgb(0, 0, 141);
+}
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+}
+
+main {
+    background-color: var(--main-background-color);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    border: solid 10px var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
