@@ -40,3 +40,12 @@ h5,
 h6 {
     color: var(--primary-color);
 }
+
+section#social-links a {
+    display: inline-block;
+}
+
+#credits {
+    margin-top: 2rem;
+    text-align: center;
+}
