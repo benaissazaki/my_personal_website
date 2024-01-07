@@ -6,6 +6,9 @@ article img {
     max-width: 100%;
 }
 
-article code {
-    text-wrap: wrap;
+article pre {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    overflow-x: scroll;
 }
