@@ -54,9 +54,8 @@
 
             <h2>1- Finding CPLimit’s memory address</h2>
 
-            <figure><img fetchpriority="high" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/1-Initial-CPL-1024x767.png.webp" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/1-Initial-CPL-1024x767.png.webp 1024w, https://benaissazaki.com/wp-content/uploads/2023/04/1-Initial-CPL-300x225.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/1-Initial-CPL-768x575.png.webp 768w, https://benaissazaki.com/wp-content/uploads/2023/04/1-Initial-CPL.png.webp 1280w">
+            <figure>
+                <img fetchpriority="high" decoding="async" src="./assets/img/1-Initial-CPL.webp" alt="">
             </figure>
 
             <p>At the start of the game, CPLimit=800.</p>
@@ -66,9 +65,8 @@
 
             <p>We enter 800 in the “Value” input box, and hit “First scan”:</p>
 
-            <figure><img decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/2-Initial-Mem-search.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/2-Initial-Mem-search.png 655w, https://benaissazaki.com/wp-content/uploads/2023/04/2-Initial-Mem-search-265x300.png.webp 265w">
+            <figure>
+                <img decoding="async" src="./assets/img/2-Initial-Mem-search.webp" alt="">
             </figure>
 
             <p>As we can see on the left, there are 846 variables containing that value.</p>
@@ -77,9 +75,8 @@
 
             <p>I will then type the new value and hit “Next scan”:</p>
 
-            <figure><img decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/3-Second-Mem-search.png.webp" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/3-Second-Mem-search.png.webp 655w, https://benaissazaki.com/wp-content/uploads/2023/04/3-Second-Mem-search-264x300.png.webp 264w">
+            <figure>
+                <img decoding="async" src="./assets/img/3-Second-Mem-search.webp" alt="">
             </figure>
 
             <p>And there it is, CPLimit’s address is 04E39748 in Hexadecimal.</p>
@@ -89,16 +86,14 @@
 
             <p>I will try to change CPLimit’s value directly from Cheat Engine and set it to 1000:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/4-Mem-change.png.webp" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/4-Mem-change.png.webp 866w, https://benaissazaki.com/wp-content/uploads/2023/04/4-Mem-change-300x257.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/4-Mem-change-768x659.png.webp 768w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/4-Mem-change.webp" alt="">
             </figure>
 
             <p>However, the game instantly sets it back to 850:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/5-Mem-unchanged.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/5-Mem-unchanged.png 653w, https://benaissazaki.com/wp-content/uploads/2023/04/5-Mem-unchanged-264x300.png.webp 264w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/5-Mem-unchanged.webp" alt="">
             </figure>
 
             <p>Well, this gives us an idea of how the game works. We can assume that it does not blindly trust the
@@ -109,9 +104,8 @@
             <p>Now that we have our address, we can close Cheat Engine and open x32dbg, and attach it to the game’s
                 process:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/6-Attaching-x32.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/6-Attaching-x32.png 801w, https://benaissazaki.com/wp-content/uploads/2023/04/6-Attaching-x32-300x162.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/6-Attaching-x32-768x415.png.webp 768w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/6-Attaching-x32.webp" alt="">
             </figure>
 
             <p>Weirdly enough, there are 2 processes related to the game. I suppose that the first one is the actual
@@ -119,9 +113,8 @@
 
             <p>So we choose the first process. And we are greeted with this scary-looking interface:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/6-x32dbg-1024x510.png.webp" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/6-x32dbg-1024x510.png.webp 1024w, https://benaissazaki.com/wp-content/uploads/2023/04/6-x32dbg-300x149.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/6-x32dbg-768x382.png.webp 768w, https://benaissazaki.com/wp-content/uploads/2023/04/6-x32dbg-1536x764.png.webp 1536w, https://benaissazaki.com/wp-content/uploads/2023/04/6-x32dbg.png 1917w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/6-x32dbg.png" alt="">
             </figure>
 
             <p>Here are the 3 important sections we need to know:</p>
@@ -141,9 +134,8 @@
             <p><strong>Left-clicking &gt; Go to &gt; Expression</strong> and enter the address we found earlier
                 (04E39748):</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/7-Hex-dump.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/7-Hex-dump.png 405w, https://benaissazaki.com/wp-content/uploads/2023/04/7-Hex-dump-300x205.png.webp 300w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/7-Hex-dump.png" alt="">
             </figure>
 
             <p>As a start, we will try to find the code that is responsible for modifying this variable whenever it
@@ -158,9 +150,8 @@
             <p>In the game, I will again build another farm to modify CPLimit, hence triggering our breakpoint. And
                 indeed the game pauses here:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/8-Change-CPL.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/8-Change-CPL.png 495w, https://benaissazaki.com/wp-content/uploads/2023/04/8-Change-CPL-300x79.png.webp 300w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/8-Change-CPL.webp" alt="">
             </figure>
 
             <p>“<strong><code>mov dword ptr ds:[esi+10], edi</code></strong>” writes to our address. To understand
@@ -186,8 +177,9 @@
 
             <p>If we take a look at the registers’ values:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/8-Change-CPL-Reg.png" alt=""></figure>
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/8-Change-CPL-Reg.png" alt="">
+            </figure>
 
             <p>We notice that <strong><code>esi+10 = 04E39738 + 10 = 04E39748</code></strong> = CPLimit’s address.
             </p>
@@ -199,9 +191,7 @@
 
             <p>We step out of the current function, and we find the instruction that called it:</p>
 
-            <figure><img loading=" lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/9-HandleCP.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/9-HandleCP.png 774w, https://benaissazaki.com/wp-content/uploads/2023/04/9-HandleCP-300x12.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/9-HandleCP-768x30.png 768w">
+            <figure><img loading=" lazy" decoding="async" src="./assets/img/9-HandleCP.webp" alt="">
             </figure>
 
             <p><strong><code>call &lt;ADDRESS&gt;</code></strong> is the instruction to call the function located at
@@ -219,9 +209,8 @@
 
             <p>We keep stepping through the function’s code until we notice something here:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/9-CPL-loaded.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/9-CPL-loaded.png 810w, https://benaissazaki.com/wp-content/uploads/2023/04/9-CPL-loaded-300x18.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/9-CPL-loaded-768x46.png.webp 768w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/9-CPL-loaded.webp" alt="">
             </figure>
 
 
@@ -231,9 +220,8 @@
             <p>So there must be something important going on in this function, I set a breakpoint on it, and let the
                 program run. And when it is triggered, I step into it:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/10-CPLimit-calculated.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/10-CPLimit-calculated.png 866w, https://benaissazaki.com/wp-content/uploads/2023/04/10-CPLimit-calculated-300x19.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/10-CPLimit-calculated-768x48.png.webp 768w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/10-CPLimit-calculated.webp" alt="">
             </figure>
 
             <p>I notice that after executing <strong><code>add ebx, dword ptr ds:[esi+4]</code></strong>, ebx
@@ -258,9 +246,8 @@
 
             <p>We keep stepping through the function until we reach this instruction:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/10-CPLimit-trimmer.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/10-CPLimit-trimmer.png 866w, https://benaissazaki.com/wp-content/uploads/2023/04/10-CPLimit-trimmer-300x157.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/10-CPLimit-trimmer-768x403.png.webp 768w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/10-CPLimit-trimmer.webp" alt="">
             </figure>
 
 
@@ -294,9 +281,8 @@
                 nops” option.
             </p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/11-Nopping-trimmer.png" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/11-Nopping-trimmer.png 866w, https://benaissazaki.com/wp-content/uploads/2023/04/11-Nopping-trimmer-300x24.png.webp 300w, https://benaissazaki.com/wp-content/uploads/2023/04/11-Nopping-trimmer-768x60.png.webp 768w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/11-Nopping-trimmer.webp" alt="">
             </figure>
 
 
@@ -305,9 +291,8 @@
 
             <p>Going back to the game, and after building 3 additional farms, we see the following result:</p>
 
-            <figure><img loading="lazy" decoding="async"
-                    src="https://benaissazaki.com/wp-content/uploads/2023/04/12-Success.png.webp" alt=""
-                    srcset="https://benaissazaki.com/wp-content/uploads/2023/04/12-Success.png.webp 327w, https://benaissazaki.com/wp-content/uploads/2023/04/12-Success-267x300.png.webp 267w">
+            <figure>
+                <img loading="lazy" decoding="async" src="./assets/img/12-Success.webp" alt="">
             </figure>
 
 
