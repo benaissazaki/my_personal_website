@@ -4,6 +4,7 @@ article figure {
 
 article img {
     max-width: 100%;
+    border: solid 5px var(--primary-color);
 }
 
 article pre {
