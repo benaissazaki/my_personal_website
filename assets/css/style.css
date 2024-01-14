@@ -80,3 +80,15 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
+
+ul.checklist li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+ul.checklist li input[type="checkbox"] {
+    margin-left: -1rem;
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+}
