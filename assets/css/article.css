@@ -5,6 +5,8 @@ article figure {
 article img {
     max-width: 100%;
     border: solid 5px var(--primary-color);
+    margin: 0 auto;
+    display: block;
 }
 
 article pre {

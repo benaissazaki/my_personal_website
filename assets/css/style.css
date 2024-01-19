@@ -1,11 +1,11 @@
 @font-face {
     font-family: Barlow;
-    src: url(../fonts/Barlow-Regular.woff2);
+    src: url(/fonts/Barlow-Regular.woff2) format('woff2');
 }
 
 @font-face {
     font-family: Barlow;
-    src: url(../fonts/Barlow-Bold.woff2);
+    src: url(/fonts/Barlow-Bold.woff2) format('woff2');
     font-weight: bold;
 }
 
