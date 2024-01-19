@@ -9,7 +9,9 @@ date: 2023-04-26T12:00:00Z
 
 to
 
-    nopnopnop
+    nop
+    nop
+    nop
 
 Doing that in x32dbg would only work until the game is closed. So now the goal is to make a more persistent solution using a DLL injection.
 
