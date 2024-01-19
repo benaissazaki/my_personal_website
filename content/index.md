@@ -57,23 +57,23 @@ I love writing code, be it for the desktop 🖥️, the web 🕸️, mobile 📱
 
 <ul>
     <li style="list-style-type: '☑️ ';">
-        <a href="./blog/wordpress-security-checklist/">WordPress security checklist</a><br>
+        <a href="/blog/wordpress-security-checklist/">WordPress security checklist</a><br>
         <time>2024-01-14</time>
     </li>
     <li style="list-style-type: '🔒 ';">
-        <a href="./blog/security-strategies-for-your-wordpress-website/">Security strategies for your Wordpress Website</a><br>
+        <a href="/blog/security-strategies-for-your-wordpress-website/">Security strategies for your Wordpress Website</a><br>
         <time>2023-08-26</time>
     </li>
     <li style="list-style-type: '📽️ ';">
-        <a href="./blog/a-better-way-to-watch-movies-on-tv/">A better way to watch movies on TV</a><br>
+        <a href="/blog/a-better-way-to-watch-movies-on-tv/">A better way to watch movies on TV</a><br>
         <time>2023-06-18</time>
     </li>
     <li style="list-style-type: '💉 ';">
-        <a href="./blog/hacking-my-childhood-game-dll-injection/">Hacking my childhood game: DLL Injection</a><br>
+        <a href="/blog/hacking-my-childhood-game-dll-injection/">Hacking my childhood game: DLL Injection</a><br>
         <time>2023-04-26</time>
     </li>
     <li style="list-style-type: '🕹️ ';">
-        <a href="./blog/hacking-my-childhood-game/">Hacking my childhood game</a><br>
+        <a href="/blog/hacking-my-childhood-game/">Hacking my childhood game</a><br>
         <time>2023-04-16</time>
     </li>
 </ul>
