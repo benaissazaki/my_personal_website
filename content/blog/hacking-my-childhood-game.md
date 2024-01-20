@@ -1,6 +1,7 @@
 ---
 title: "Hacking my childhood game"
 date: 2023-04-16T12:00:00Z
+description: I will detail the step-by-step process I followed to change the behavior of Battle For Middle-Earth II
 ---
 
 I recently started to explore Game Hacking, and I find it fascinating. The thought process is quite different from programming since it asks “How was this created?” instead of “How do I create this?”.

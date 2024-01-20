@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ $article_style := resources.Get "css/article.css" | resources.Minify }}
     <link rel="stylesheet" href="{{ $article_style.Permalink }}">
+    <meta name="description" content="{{ .Description }}">
     <title>{{ .Title }}</title>
 </head>
 

@@ -1,6 +1,7 @@
 ---
 title: "Hacking my childhood game: DLL Injection"
 date: 2023-04-26T12:00:00Z
+description: Using DLL injection to change the behavior of Battle for Middle-Earth II
 ---
 
 [Previously](/blog/hacking-my-childhood-game/), we analyzed The Lord of the Rings: Battle for Middle-Earth II’s code to find a way to allow the Command Point Limit to go beyond 1000\. We found that we could achieve that by changing the instruction at the address 0x006A74B9 from:
