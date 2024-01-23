@@ -46,7 +46,7 @@ I love writing code, be it for the desktop 🖥️, the web 🕸️, mobile 📱
 
 - Developing and managing WordPress websites at [Webdispo](https://www.webdispo.com/en/)
 - Contributing to open-source projects
-- Aiming to have at least a GitHub commit per day
+- Aiming to have at least a GitHub commit per day (which is why you'll find some random useless commits here and there)
 - Writing on my blog
 
 ## Here is what I built
