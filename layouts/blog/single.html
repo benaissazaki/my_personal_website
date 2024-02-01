@@ -9,6 +9,13 @@
     {{ $article_style := resources.Get "css/article.css" | resources.Minify }}
     <link rel="stylesheet" href="{{ $article_style.Permalink }}">
     <meta name="description" content="{{ .Description }}">
+    <meta name="og:type" content="article">
+    <meta name="og:published_time" content="{{ .Date }}">
+    <meta name="og:locale" content="en_GB">
+    <meta name="og:title" content="{{ .Title }}">
+    <meta name="og:description" content="{{ .Description }}"> 
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ .Description }}">
     <title>{{ .Title }}</title>
 </head>
 
