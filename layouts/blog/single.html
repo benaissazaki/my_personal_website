@@ -8,7 +8,28 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ $article_style := resources.Get "css/article.css" | resources.Minify }}
     <link rel="stylesheet" href="{{ $article_style.Permalink }}">
+    <link rel="canonical" href="https://benaissazaki.com{{ .RelPermalink }}">
     <meta name="description" content="{{ .Description }}">
+    <meta name="og:type" content="article">
+    <meta name="og:published_time" content="{{ .Date }}">
+    <meta name="og:locale" content="en_GB">
+    <meta name="og:title" content="{{ .Title }}">
+    <meta name="og:description" content="{{ .Description }}">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ .Description }}">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "{{ .Title }}",
+          "author": {
+            "@type": "Person",
+            "name": "Benaissa Zaki",
+            "url": "https://benaissazaki.com"
+          },  
+          "datePublished": "{{ .Date }}"
+        }
+    </script>
     <title>{{ .Title }}</title>
 </head>
 

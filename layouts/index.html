@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ $style := resources.Get "css/style.css" | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="canonical" href="https://benaissazaki.com/">
     <meta name="description" content="{{ .Description }}">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Benaissa Zaki",
+          "url": "https://benaissazaki.com/",
+        }
+    </script>
     <title>{{ .Title }}</title>
 </head>
 
