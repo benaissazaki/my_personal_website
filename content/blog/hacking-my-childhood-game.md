@@ -29,7 +29,7 @@ Note: This can probably be done in 5 mins by modifying an option in some game fi
 
 ## 1- Finding CPLimit’s memory address
 
-![](/img/1-Initial-CPL.webp)
+![BFME2 Screenshot](/img/1-Initial-CPL.webp)
 
 At the start of the game, CPLimit=800.
 
@@ -37,7 +37,7 @@ To find the address of the variable in memory, we fire up Cheat Engine and attac
 
 We enter 800 in the “Value” input box, and hit “First scan”:
 
-![](/img/2-Initial-Mem-search.webp)
+![Cheat Engine: Searching for CPL's value in memory](/img/2-Initial-Mem-search.webp)
 
 As we can see on the left, there are 846 variables containing that value.
 
@@ -45,7 +45,7 @@ To narrow the results, I will build a farm in the game which increases CPLimit�
 
 I will then type the new value and hit “Next scan”:
 
-![](/img/3-Second-Mem-search.webp)
+![Cheat Engine: Finding CPL's value in memory](/img/3-Second-Mem-search.webp)
 
 And there it is, CPLimit’s address is 04E39748 in Hexadecimal.
 
@@ -53,11 +53,11 @@ Now, if I were to quit the current game and launch a new one, the address would 
 
 I will try to change CPLimit’s value directly from Cheat Engine and set it to 1000:
 
-![](/img/4-Mem-change.webp)
+![Cheat Engine: Attempting to change the value of CPL's memory location](/img/4-Mem-change.webp)
 
 However, the game instantly sets it back to 850:
 
-![](/img/5-Mem-unchanged.webp)
+![Cheat Engine: CPL's value doesn't change](/img/5-Mem-unchanged.webp)
 
 Well, this gives us an idea of how the game works. We can assume that it does not blindly trust the value in memory and that CPLimit is probably constantly recalculated.
 
