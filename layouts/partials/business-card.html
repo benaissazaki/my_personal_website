@@ -1,0 +1,12 @@
+{{ $card_style := resources.Get "css/business-card.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $card_style.Permalink }}">
+
+<div class="business-card">
+    <span class="website">benaissazaki.com</span>
+    <span class="email">contact@benaissazaki.com</span>
+    <img src="/img/logo-wd.webp" alt="Webdispo" class="company">
+    <div>
+        <span>Zaki BENAISSA</span><br>
+        <sub>Software Engineer</sub>
+    </div>
+</div>
