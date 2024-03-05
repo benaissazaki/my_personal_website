@@ -58,6 +58,10 @@ I love writing code, be it for the desktop 🖥️, the web 🕸️, mobile 📱
 ## My latest articles
 
 <ul>
+    <li style="list-style-type: '🚀 ';">
+        <a href="/blog/wordpress-speed-checklist/">Wordpress speed checklist</a><br>
+        <time>2024-03-05</time>
+    </li>
     <li style="list-style-type: '🍡 ';">
         <a href="/blog/django-from-beginner-to-intermediate/">6 Django Tips to go From Beginner to Intermediate</a><br>
         <time>2024-02-02</time>
